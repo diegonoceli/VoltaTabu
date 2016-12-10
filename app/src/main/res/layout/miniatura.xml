@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            fresco:placeholderImage="@drawable/onibus"
+            fresco:layout_constraintRight_toLeftOf="@+id/nome"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="13dp"
+            fresco:layout_constraintBottom_toBottomOf="@+id/horario"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="5dp"
+            tools:layout_constraintLeft_creator="1"
+            fresco:layout_constraintLeft_toLeftOf="parent"
+            fresco:layout_constraintTop_toTopOf="@+id/nome"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="4dp" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="129dp"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            tools:text="nome"
+            android:textSize="19sp"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            fresco:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="11dp"
+            tools:layout_constraintLeft_creator="1"
+            fresco:layout_constraintLeft_toLeftOf="parent"
+            fresco:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/horario"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+
+            tools:text="Matricula"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            fresco:layout_constraintRight_toRightOf="@+id/nome"
+            android:layout_marginTop="12dp"
+            fresco:layout_constraintTop_toBottomOf="@+id/nome"
+            tools:layout_constraintLeft_creator="1"
+            fresco:layout_constraintLeft_toLeftOf="@+id/nome" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!-- Movie Title -->
+
+    <!-- Rating -->
+
+    <!-- Genre -->
+
+    <!-- Release Year -->
+
+</RelativeLayout>
