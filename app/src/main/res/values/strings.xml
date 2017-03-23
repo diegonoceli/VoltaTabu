@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">VoltaTabu</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Sobre</string>
     <string name="cancel">Cancel</string>
+    <string name="cadastre"><u>Cadastre-se</u></string>
     <string name="enter_name">Enter Name</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="volta_tabu">Volta Tabu</string>
-    <string name="title_activity_listar">ListarAct</string>
+    <string name="title_activity_listar">Lista dos que Voltam</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_loginact">Loginact</string>
+
+    <string name="title_activity_login">LoginAct</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cadastro_voltar">CadastroVoltar</string>
+    <string name="title_activity_cadastro__volta">Cadastro_Volta</string>
+    <string name="title_activity_informacoes">Informacoes</string>
 </resources>

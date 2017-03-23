@@ -6,26 +6,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_begin="67dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteY="67dp"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <ListView
-        android:layout_width="0dp"
-        android:layout_height="551dp"
+    <TextView
+        android:text="TextView"
+        android:layout_width="83dp"
+        android:layout_height="16dp"
+        android:id="@+id/data"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="@+id/listview"
+        app:layout_constraintTop_toTopOf="@+id/listview" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/refresh"
+        android:id="@+id/FabAtualizar"
+        app:backgroundTint="#75c2ec"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/FabDelete"
+        android:layout_marginEnd="33dp"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="11dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:id="@+id/FabDelete"
+        app:backgroundTint="#e43131"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/FabAtualizar"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintLeft_toLeftOf="@+id/FabAtualizar" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@+id/listview"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="88dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        android:id="@+id/listview" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

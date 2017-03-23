@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.diego.voltatabu.Cadastro"
+    tools:showIn="@layout/activity_cadastro">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="36dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+
+    <EditText
+        android:id="@+id/edtnome"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:focusable="true"
+        android:hint="Nome"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/colorhint"
+        android:textColorHighlight="@color/normal"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintBottom_toTopOf="@+id/edtmatricula"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+
+    <EditText
+        android:id="@+id/edtmatricula"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp"
+        android:focusable="true"
+        android:hint="Matricula"
+        android:inputType="number|numberDecimal"
+        android:lineSpacingExtra="12sp"
+        android:singleLine="true"
+        android:textColor="@color/colorhint"
+        android:textColorHighlight="@color/normal"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintBottom_toTopOf="@+id/botaoupload"
+        app:layout_constraintLeft_toLeftOf="@+id/edtnome"
+        app:layout_constraintRight_toRightOf="@+id/edtnome"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/botaoupload"
+        style="@android:style/Widget.Button"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="9dp"
+        android:text="Cadastrar!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:text="Cadastrar!" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/FotoCircle"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/trocafoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/trocafoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/edtnome"
+        app:layout_constraintRight_toRightOf="@+id/FotoCircle"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

@@ -3,7 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#8cc2f1</color>
-    <color name="background">#fff</color>
+    <color name="background">#ffffff</color>
     <color name="textview">#303F9F</color>
     <color name="colorhint">#303F9F</color>
+
+    <color name="normal">#639bed</color>
+    <color name="high_light">#FF2B611B</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

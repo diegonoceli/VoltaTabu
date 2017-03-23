@@ -3,8 +3,11 @@
     package="com.example.diego.voltatabu">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
         android:name=".AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,17 +25,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Listar"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
             android:name=".ListarAct"
             android:label="@string/title_activity_listar"
-            android:theme="@style/AppTheme.NoActionBar"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Cadastro"
+            android:label="@string/title_activity_cadastro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cadastro_Volta"
+            android:label="@string/title_activity_cadastro__volta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Informacoes"
+            android:label="@string/title_activity_informacoes"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

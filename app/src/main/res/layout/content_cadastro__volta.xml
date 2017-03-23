@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro__volta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.diego.voltatabu.Cadastro_Volta"
+    tools:showIn="@layout/activity_cadastro__volta">
+
+    <Spinner
+        android:id="@+id/spinnerCidade"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHorario"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="103dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="102dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="Escolha a cidade:"
+        android:id="@+id/lblEscolha"
+        android:textSize="21sp"
+        android:textColor="@color/colorhint"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCidade"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Escolha o horario da volta!"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textSize="21sp"
+        android:textColor="@color/colorhint"
+        android:id="@+id/textView3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btncadastrovolta"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="188dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="189dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false" />
+
+    <Spinner
+        android:id="@+id/spinnerHorario"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="Cadastrar volta!"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btncadastrovolta"
+        style="@android:style/Widget.Button"
+        android:elevation="24dp"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
